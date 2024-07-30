@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customizable Notebook</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container navContainer">
+        <h1 id="rotate">Customizable <span >Notebook</span></h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#cart">Cart</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="container">
+        <h2>Welcome to Customizable Notebook</h2>
+        <p>Create your personalized notebook with our easy-to-use customization options.</p>
+        <a href="#product" class="btn">Shop Now</a>
+      </div>
+    </section>
+
+    <section id="product">
+      <div class="container">
+        <h2>Customizable Notebook</h2>
+        <div class="product-details">
+          <img src="/notebook.jpg" alt="Customizable Notebook" class="product-image">
+          <div class="product-info">
+            <p>Choose your design and customize your notebook.</p>
+            <div class="quantity">
+              <label for="quantity">Quantity:</label>
+              <input type="number" id="quantity" value="1" min="1">
+            </div>
+            <button id="addToCart" class="btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cart">
+      <div class="container">
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <a href="#checkout" class="btn">Proceed to Checkout</a>
+      </div>
+    </section>
+
+    <section id="checkout">
+      <div class="container">
+        <h2>Checkout</h2>
+        <form id="checkoutForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" required>
+          </div>
+          <div class="form-group">
+            <label for="payment">Payment Method</label>
+            <select id="payment" required>
+              <option value="credit-card">Credit Card</option>
+              <option value="paypal">PayPal</option>
+              <option value="debit-card">Debit Card</option>
+              <option value="netbanking">Netbanking</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Place Order</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="confirmation">
+      <div class="container">
+        <h2>Thank You for Your Order!</h2>
+        <p>Your order has been placed successfully. We will notify you once it ships.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Customizable Notebook. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
